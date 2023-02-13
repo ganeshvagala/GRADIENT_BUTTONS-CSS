@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background: black;
+}
+.container{
+  background: linear-gradient(45deg,#e8effd 0%,#d6e3f5 100%);
+  padding: 100px;
+}
+.btn{
+  position: relative;
+  display: inline-flex;
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 17px 20px;
+  overflow: hidden;
+  transition: all .4s;
+}
+.btn .inner{
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  left: -100%;
+  z-index: -1;
+  transition: all .4s;
+}
+.btn button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+  transform: scale(1.03);
+}
+.btn:hover .inner{
+  left: 0;
+}
+.btn1 .inner{
+  background: -webkit-linear-gradient(right, #00dbde,#fc00ff,#00dbde,#fc00ff);
+}
+.btn2 .inner{
+  background: -webkit-linear-gradient(right, #f7b733,#fc4a1a,#f7b733,#fc4a1a);
+}
+.btn3 .inner{
+  background: -webkit-linear-gradient(right, #f1c40e,#26a65b,#f1c40e,#26a65b);
+}
+.btn4 .inner{
+  background: -webkit-linear-gradient(right, #43cea2,#185a9d,#43cea2,#185a9d);
+}
